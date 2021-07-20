@@ -22,11 +22,18 @@
   --color-box-shadow: rgba(0, 0, 0, 0.5);
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background-color: var(--color-button);
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -52,15 +59,8 @@ body {
   font-weight: 700;
 }
 
-.title-page {
-  font-size: 350%;
-  font-weight: 300;
-  text-align: center;
-  padding: 5rem;
-  margin: 0;
-  text-transform: uppercase;
-  background: var(--color-bg-title);
-  color: var(--color-bg);
+#menu {
+  background: var(--color-bg);
 }
 
 .title-page .fas,
@@ -110,8 +110,8 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 115%;
-  line-height: 40px;
-  padding: 5rem 0 1.2rem 0;
+  line-height: 45px;
+  padding: 3rem 0;
 }
 
 #intro .section-title {
@@ -130,7 +130,7 @@ body {
   color: var(--color-bg);
   font-size: 105%;
   font-weight: 700;
-  margin: 4.5rem 2rem;
+  margin: 3rem;
   border-radius: 0.25rem;
   transition: all ease-in-out 250ms;
 }
@@ -180,11 +180,6 @@ span.date,
   color: var(--color-button-hover);
 }
 
-h2.name,
-h4.statut {
-  font-weight: 600;
-}
-
 .my-image {
   max-height: 300px;
 }
@@ -201,25 +196,23 @@ h4.section-title {
 /* SKILLS */
 
 #skills {
-  background: var(--color-bg-sub-title);
-  color: var(--color-text);
+  background: var(--color-bg);
   padding: 40px;
 }
 
 #skills h4 {
-  color: var(--color-bg);
   margin-top: 3rem !important;
 }
 
 #skills .card {
   margin: 2rem auto;
-  background: transparent;
   border: none;
   max-width: 100%;
 }
 
 #skills i {
   font-size: 350%;
+  color: var(--color-bg);
 }
 
 #skills .card-text {
@@ -234,13 +227,6 @@ h4.section-title {
 
 .card-body.show {
   transform: translateX(0);
-}
-
-.card-title {
-  font-size: 150%;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  color: var(--color-bg);
 }
 
 /* EXPERIENCES */
@@ -316,7 +302,6 @@ p.occupation-now {
 .grade-links {
   display: flex;
   flex-direction: column;
-  align-items: left;
   padding: 1rem 0 0;
 }
 
@@ -500,6 +485,7 @@ img.project-thumbnail:hover {
 
 #footer p {
   line-height: 40px;
+  margin: 0;
 }
 
 #footer i {
