@@ -50,7 +50,6 @@ body {
 
 * a:hover {
   color: var(--color-icon-hover);
-  text-decoration: none;
 }
 
 .colored-text {
@@ -152,11 +151,6 @@ span.date,
   color: var(--color-bg);
   padding: 40px;
   text-align: center;
-}
-
-#flex-infos {
-  border-radius: 0.25rem;
-  background: var(--color-icon);
 }
 
 .contact-infos {
