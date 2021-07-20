@@ -59,10 +59,6 @@ body {
   font-weight: 700;
 }
 
-#menu {
-  background: var(--color-bg);
-}
-
 .title-page .fas,
 #navbar .fas {
   color: var(--color-icon);
@@ -160,7 +156,7 @@ span.date,
 
 #flex-infos {
   border-radius: 0.25rem;
-  background: var(--color-bg-sub-title);
+  background: var(--color-icon);
 }
 
 .contact-infos {
