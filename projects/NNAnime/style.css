@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+button {
+  background: #8b0000 !important;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.icon {
+  color: darkred;
+}
+
+#head-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("images/akira-wp.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#head-page h1 {
+  font-size: 300%;
+  text-transform: uppercase;
+  margin: 0 0.5em 10em 0;
+  border-bottom: 5px solid darkred;
+}
+
+#head-page p {
+  font-size: 110%;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#head-page button {
+  font-weight: 800;
+  margin: 3rem auto;
+  transition: all ease-in-out 250ms !important;
+}
+
+#head-page button:hover {
+  background: #ac0000 !important;
+}
+
+#section-perks > .row {
+  opacity: 0;
+  transition: all ease-in-out 2000ms;
+}
+
+#section-perks > .row.reveal {
+  opacity: 1;
+}
+
+#section-tools,
+#section-services,
+#section-benefits {
+  margin-top: 5rem;
+}
+
+#section-benefits {
+  margin-bottom: 5rem;
+}
+
+#section-tools h3,
+#section-services h3,
+#section-benefits h3 {
+  text-transform: uppercase;
+}
+
+#section-tools h3 i,
+#section-services h3 i,
+#section-benefits h3 i {
+  margin-left: 1rem;
+}
+
+#section-tools p,
+#section-services p,
+#section-benefits p {
+  text-align: left;
+  margin-top: 1.75rem;
+  font-weight: 800;
+}
+
+#section-subscribe input::placeholder {
+  font-weight: 600;
+}
+
+#section-subscribe button {
+  background: #8b0000 !important;
+  color: #fafafa !important;
+}
+
+#section-subscribe button:hover {
+  color: #fafafa !important;
+  background: #ac0000 !important;
+}
+
+#section-footer .icon {
+  color: #333;
+}
+
+#section-footer a {
+  text-decoration: none;
+  color: #8b0000;
+  font-weight: 800;
+  transition: all ease-in-out 250ms;
+}
+
+#section-footer a:hover {
+  color: #ac0000;
+}
+
+#section-footer .list-group-item {
+  background: #8b0000;
+}
+
+#section-footer .list-group-item:hover {
+  background: #ac0000;
+}
