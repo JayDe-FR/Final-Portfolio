@@ -142,15 +142,11 @@ body {
   color: var(--color-text);
 }
 
-span.date {
+span.date,
+.date-close {
   font-weight: 600;
   font-size: 140%;
-  color: var(--color-text-mid);
-}
-
-.colored-text {
-  color: var(--color-icon);
-  font-size: 500%;
+  color: var(--color-icon-hover);
 }
 
 /* HEADER */
@@ -202,49 +198,38 @@ h4.section-title {
   margin: 3rem auto;
 }
 
-/* DESSEIN */
-
-#dessein {
-  padding: 40px;
-}
-
-#dessein .section-title {
-  margin: 3rem auto 2rem;
-}
-
-.objectif {
-  font-size: 130%;
-  line-height: 40px;
-  color: var(--color-text-mid);
-}
-
 /* SKILLS */
 
 #skills {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  background: var(--color-bg-title);
+  background: var(--color-bg-sub-title);
+  color: var(--color-text);
   padding: 40px;
 }
 
 #skills h4 {
   color: var(--color-bg);
-  margin: 3rem auto 0;
+  margin-top: 3rem !important;
 }
 
-.card {
+#skills .card {
   margin: 2rem auto;
   background: transparent;
-  color: var(--color-bg);
   border: none;
   max-width: 100%;
 }
 
+#skills i {
+  font-size: 350%;
+}
+
+#skills .card-text {
+  font-weight: 800;
+  margin-top: 1rem;
+}
+
 .card-body {
   transform: translateX(-500%);
-  transition: all ease-in-out 850ms;
+  transition: all ease-in-out 1000ms;
 }
 
 .card-body.show {
@@ -258,17 +243,6 @@ h4.section-title {
   color: var(--color-bg);
 }
 
-.progress {
-  background-color: var(--color-bg);
-  height: 2.5rem;
-  font-size: 120%;
-  font-weight: 700;
-}
-
-.progress-bar {
-  color: #333;
-}
-
 /* EXPERIENCES */
 
 #experiences {
@@ -277,6 +251,8 @@ h4.section-title {
   align-items: baseline;
   text-align: center;
   padding: 0 40px;
+  background: var(--color-button);
+  color: var(--color-bg);
 }
 
 #experiences h4 {
@@ -297,17 +273,11 @@ h4.section-title {
 p.education,
 p.occupation {
   margin: 1rem;
-  color: #5c5c5c;
 }
 
 .last-block {
   background-color: var(--color-bg-title);
   padding: 40px;
-}
-
-.date-close {
-  font-size: 150%;
-  color: var(--color-icon);
 }
 
 p.occupation-now {
@@ -329,7 +299,6 @@ p.occupation-now {
 .part-deux {
   text-align: center;
   font-size: 105%;
-  font-weight: 500;
   padding: 0 1rem;
 }
 
@@ -368,21 +337,13 @@ p.occupation-now {
   color: var(--color-icon-hover);
 }
 
-.colored-text {
-  color: var(--color-icon);
-  font-size: 120%;
-  font-weight: 700;
+#project-container {
+  background: var(--color-bg-sub-title);
 }
 
-.head-page {
-  background: var(--color-bg-title);
-  color: var(--color-bg);
-  text-transform: uppercase;
-}
-
-.head-page i {
-  font-size: 150%;
-  margin-right: 1rem;
+#project-container h4 {
+  margin: 0;
+  padding-top: 3rem;
 }
 
 .title-page {
@@ -422,7 +383,7 @@ p.occupation-now {
 }
 
 .card-body {
-  background: var(--color-bg-sub-title);
+  background: var(--color-button);
   border-radius: 0.25rem;
 }
 
@@ -431,12 +392,9 @@ p.occupation-now {
 }
 
 .card-body .card-text {
-  line-height: 30px;
   font-size: 105%;
   font-weight: 500;
   width: 80%;
-  margin: 0;
-  padding: 2rem;
 }
 
 .card-footer {
@@ -448,23 +406,12 @@ p.occupation-now {
   text-decoration: none;
   font-size: 120%;
   font-weight: 900;
-  color: var(--color-icon);
+  color: var(--color-text);
   transition: all ease-in-out 250ms;
 }
 
 .card-footer a:hover {
-  color: var(--color-bg-sub-title);
-}
-
-.head-page {
-  background: var(--color-bg-title);
-  color: var(--color-bg);
-  text-transform: uppercase;
-}
-
-.head-page i {
-  font-size: 150%;
-  margin-right: 1rem;
+  color: var(--color-button);
 }
 
 .title-page {
@@ -522,16 +469,16 @@ h5.project-title {
 }
 
 .icon-dark {
-  color: var(--color-text);
+  color: var(--color-button);
   margin-right: 0.25rem;
 }
 
 .project-description {
-  font-size: 95%;
-  font-weight: 700;
-  color: var(--color-text-mid);
+  font-size: 105%;
+  font-weight: 500;
+  color: var(--color-bg);
   padding-bottom: 1rem;
-  line-height: 30px;
+  line-height: 35px;
 }
 
 img.project-thumbnail {
@@ -545,4 +492,16 @@ img.project-thumbnail {
 
 img.project-thumbnail:hover {
   transform: scale(1.05);
+}
+
+#footer {
+  background: var(--color-text);
+}
+
+#footer p {
+  line-height: 40px;
+}
+
+#footer i {
+  color: var(--color-icon-hover);
 }
