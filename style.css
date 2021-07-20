@@ -182,6 +182,7 @@ span.date,
 
 .my-image {
   max-height: 300px;
+  /* border: 10px solid var(--color-icon); */
 }
 
 h4.section-title {
