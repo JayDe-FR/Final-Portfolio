@@ -331,6 +331,14 @@ p.occupation-now {
   padding-top: 3rem;
 }
 
+#project-container a {
+  color: var(--color-button);
+}
+
+#project-container a:hover {
+  color: var(--color-bg);
+}
+
 .title-page {
   font-size: 350%;
   font-weight: 300;
