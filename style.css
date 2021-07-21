@@ -314,7 +314,7 @@ p.occupation-now {
 }
 
 #project-container {
-  background: var(--color-bg-sub-title);
+  background: var(--color-bg);
 }
 
 #project-container h4 {
@@ -322,12 +322,17 @@ p.occupation-now {
   padding-top: 3rem;
 }
 
+#project-container p {
+  color: var(--color-text);
+}
+
 #project-container a {
   color: var(--color-button);
 }
 
 #project-container a:hover {
-  color: var(--color-bg);
+  text-decoration: none;
+  color: var(--color-icon-hover);
 }
 
 .title-page {
@@ -463,6 +468,10 @@ h5.project-title {
   color: var(--color-bg);
   padding-bottom: 1rem;
   line-height: 35px;
+}
+
+#card-contact .card-body {
+  background: var(--color-bg-sub-title);
 }
 
 img.project-thumbnail {
