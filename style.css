@@ -51,16 +51,14 @@ body {
   color: var(--color-icon-hover);
 }
 
-.colored-text {
-  color: var(--color-icon);
+#intro span {
   font-size: 120%;
-  font-weight: 700;
 }
 
-.title-page .fas,
+/* .title-page .fas,
 #navbar .fas {
   color: var(--color-icon);
-}
+} */
 
 #navbar {
   margin: 1.5rem auto;
