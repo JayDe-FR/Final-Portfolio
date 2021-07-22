@@ -466,6 +466,19 @@ h5.project-title {
   background: var(--color-bg-sub-title);
 }
 
+#card-contact h5 {
+  font-size: 350%;
+}
+
+@media (max-width: 600px) {
+  #card-contact h5 {
+    font-size: 250%;
+  }
+  #card-contact img {
+    display: none;
+  }
+}
+
 img.project-thumbnail {
   width: 100%;
   height: auto;

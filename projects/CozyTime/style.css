@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;700;900&display=swap");
+
+:root {
+  --bg-col: rgba(20, 20, 20, 0.9);
+  --text-col: #fff;
+  --title-col: rgba(255, 198, 151, 0.8);
+  --primary-col: rgba(0, 0, 0, 0.85);
+  --secondary-col: rgba(199, 199, 199, 0.3);
+  --search-bar-col: rgb(248, 236, 169);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  background: var(--primary-col);
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 16px;
+  color: var(--text-col);
+  scroll-behavior: smooth;
+}
+
+header {
+  background: var(--primary-col);
+  border-bottom: 2px solid var(--search-bar-col);
+  padding: 2.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-title {
+  color: var(--title-col);
+}
+
+.brand-name {
+  color: var(--search-bar-col);
+}
+
+.search {
+  background-color: var(--secondary-col);
+  border: none;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem 1.25em;
+  color: var(--text-col);
+  transition: all ease-in-out 350ms;
+}
+
+.search::placeholder {
+  color: var(--search-bar-col);
+}
+
+.search:hover {
+  background-color: var(--title-col);
+}
+
+.search:hover::placeholder {
+  color: var(--primary-col);
+}
+
+main {
+  padding: 2.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 299px;
+  margin: 2.5em auto;
+  background-color: var(--secondary-col);
+  border: none;
+  box-shadow: 1px 2px 5px var(--primary-col);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  color: lightyellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.1px;
+}
+
+.movie-info h3 {
+  margin-top: 0;
+}
+
+.movie-info span {
+  background-color: var(--primary-col);
+  padding: 0.15rem 0.55rem;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.movie-info span.green {
+  color: limegreen;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie-info span.red {
+  color: orangered;
+}
+
+.movie-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: var(--text-col);
+  margin-bottom: 0.5em;
+}
+
+.storyline {
+  text-transform: uppercase;
+  margin-bottom: 1.25em;
+  font-weight: 900;
+}
+
+.overview {
+  background-color: var(--title-col);
+  color: var(--primary-col);
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: scroll;
+  transition: transform ease-out 500ms;
+}
+
+.overview:hover {
+  cursor: text;
+}
+
+.overview p {
+  font-style: italic;
+  text-align: center;
+  font-weight: 400;
+}
+
+.movie:hover .overview {
+  transform: translateY(0%);
+}
