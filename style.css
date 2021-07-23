@@ -140,7 +140,7 @@ span.date,
 #head-page {
   background-color: var(--color-bg-title);
   color: var(--color-bg);
-  padding: 40px;
+  padding: 40px 0 0;
   text-align: center;
 }
 
