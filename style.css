@@ -22,6 +22,8 @@
   --color-box-shadow: rgba(0, 0, 0, 0.5);
 }
 
+/* BASICS */
+
 * {
   margin: 0;
   padding: 0;
@@ -51,33 +53,14 @@ body {
   color: var(--color-icon-hover);
 }
 
-#intro span {
+/* MENU SECTION */
+
+#menu span {
   font-size: 120%;
-}
-
-#navbar {
-  margin: 1.5rem auto;
-}
-
-.navbar-brand {
-  font-size: 200%;
-  font-weight: 400;
-}
-
-.nav-titles {
-  font-size: 105%;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.nav-item {
-  margin: 0 1rem 0 0;
 }
 
 .nav-item .fas {
   font-size: 130%;
-  margin: 0 0.5rem;
-  color: var(--color-text);
 }
 
 .nav-titles .nav-link.nav-item,
