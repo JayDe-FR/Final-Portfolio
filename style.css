@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 :root {
-  /* COLORS */
   /* BG */
   --color-bg: #fafafa;
   --color-bg-title: #32708c;
@@ -53,6 +52,10 @@ body {
   color: var(--color-icon-hover);
 }
 
+.my-image {
+  max-height: 300px;
+}
+
 /* MENU SECTION */
 
 #menu span {
@@ -73,49 +76,23 @@ body {
   color: var(--color-icon-hover);
 }
 
+/* PRESENTATION SECTION */
+
 #intro {
   background-color: var(--color-bg-title);
-  color: var(--color-bg);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-size: 115%;
   line-height: 45px;
-}
-
-#intro .section-title {
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-}
-
-#intro .section-intro {
-  width: 80%;
-  text-align: center;
-}
-
-.link-infos,
-.link-cv {
-  background: var(--color-bg-sub-title);
-  color: var(--color-bg);
-  font-size: 105%;
-  font-weight: 700;
-  margin: 3rem;
-  border-radius: 0.25rem;
-  transition: all ease-in-out 250ms;
-}
-
-.link-infos:hover,
-.link-cv:hover {
-  text-decoration: none;
-  background: var(--color-icon);
-  color: var(--color-text);
 }
 
 span.date,
 .date-close {
   font-weight: 600;
   font-size: 140%;
-  color: var(--color-icon-hover);
+  color: var(--color-bg-sub-title);
+}
+
+#experiences h4 {
+  color: var(--color-icon);
 }
 
 /* HEADER */
@@ -127,33 +104,10 @@ span.date,
   text-align: center;
 }
 
-.contact-infos {
-  color: var(--color-icon);
-}
-
-.contact-infos i {
-  font-size: 120%;
-}
-
-.contact-infos a {
-  font-size: 130%;
-  color: var(--color-bg-title);
-}
-
-.contact-infos a:hover {
-  color: var(--color-button-hover);
-}
-
-.my-image {
-  max-height: 300px;
-  /* border: 10px solid var(--color-icon); */
-}
-
 h4.section-title {
   font-size: 250%;
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--color-bg-title);
   text-align: center;
   margin: 3rem auto;
 }
@@ -167,6 +121,7 @@ h4.section-title {
 
 #skills h4 {
   margin-top: 3rem !important;
+  color: var(--color-button);
 }
 
 #skills .card {
@@ -206,12 +161,10 @@ h4.section-title {
   color: var(--color-bg);
 }
 
-#experiences h4 {
-  padding: 10px 0 10px;
-}
-
-#experiences h4.section-title {
+#experiences h4,
+#today h4 {
   margin-bottom: 2rem;
+  color: var(--color-icon);
 }
 
 #path,
@@ -235,15 +188,6 @@ p.occupation-now {
   margin: 1rem;
   color: var(--color-bg);
   line-height: 30px;
-}
-
-.section-title-last {
-  font-size: 250%;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--color-bg);
-  text-align: center;
-  padding: 50px 0 25px;
 }
 
 .part-un,
@@ -294,6 +238,7 @@ p.occupation-now {
 #project-container h4 {
   margin: 0;
   padding-top: 3rem;
+  color: var(--color-button);
 }
 
 #project-container p {
