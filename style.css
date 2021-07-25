@@ -85,7 +85,7 @@ body {
 }
 
 span.date,
-.date-close {
+.date {
   font-weight: 600;
   font-size: 140%;
   color: var(--color-bg-sub-title);
