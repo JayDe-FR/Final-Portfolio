@@ -91,10 +91,6 @@ span.date,
   color: var(--color-bg-sub-title);
 }
 
-#experiences h4 {
-  color: var(--color-icon);
-}
-
 /* HEADER */
 
 #head-page {
@@ -167,21 +163,8 @@ h4.section-title {
   color: var(--color-icon);
 }
 
-#path,
-#work {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-p.education,
-p.occupation {
-  margin: 1rem;
-}
-
 .last-block {
   background-color: var(--color-bg-title);
-  padding: 40px;
 }
 
 p.occupation-now {
