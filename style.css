@@ -265,7 +265,7 @@ img.project-thumbnail {
 }
 
 img.project-thumbnail:hover {
-  transform: scale(1.05);
+  transform: scale(1);
 }
 
 /* CONTACT SECTION */
