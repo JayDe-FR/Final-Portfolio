@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fascinate&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Ravi+Prakash&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
-/***********************************/
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@
 
 html {
   font-size: 80%;
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Permanent Marker", sans-serif !important;
   box-sizing: border-box;
   background: lightcyan;
 }
