@@ -14,9 +14,3 @@ body {
   height: 50vh;
   display: flex;
 }
-
-a,
-a:active,
-a:hover {
-  text-decoration: none;
-}
