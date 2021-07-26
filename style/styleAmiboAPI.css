@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+img {
+  width: auto;
+  height: 350px;
+  object-fit: scale-down;
+  margin-bottom: 0.75em;
+  border-radius: 0.75em;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 15vh;
+  min-height: 65px;
+  padding: 0 2em;
+  color: #fff;
+  font-size: 120%;
+  font-weight: 700;
+  background: red;
+}
+
+.random {
+  padding: 0.25em 0.75em;
+  border: none;
+  border-radius: 0.25em;
+  background: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  margin: 1.5em auto;
+  border-radius: 0.75em;
+  border: 2px solid #333;
+  background: #f3f3f3;
+  box-shadow: 0 2px 10px #777;
+}
+
+.name {
+  text-transform: uppercase;
+  color: #333;
+}
+
+.gameSeries {
+  margin: 0.25em;
+  color: rgb(255, 0, 0);
+  font-weight: 900;
+}
+
+.type {
+  font-weight: 900;
+  color: #275cbd;
+}
+
+.numId {
+  color: #fff;
+  margin-top: 0.75em;
+  padding: 0.25em 0;
+  background: #333;
+}
+
+footer {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.link,
+.author {
+  font-size: 110%;
+  font-weight: 700;
+}
+
+.link {
+  color: red;
+}
+
+.link:visited {
+  color: red;
+}
+.author {
+  color: darkviolet;
+}
+
+.author:visited {
+  color: darkviolet;
+}
