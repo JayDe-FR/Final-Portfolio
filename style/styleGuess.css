@@ -19,16 +19,8 @@ html {
 }
 
 body {
-  /* color: #fff; */
-  /* color: #000; */
   color: royalblue;
-  /* background: linear-gradient(to right, #fc5c7d, #6a82fb); */
-  /* background-color: #900c3f; */
-  /* background-color: #60b347; */
   background-color: lightblue;
-  /* background: linear-gradient(to bottom left, #00b09b, #96c93d); */
-  /* background: linear-gradient(to bottom right, #e61b3c, #541a7e); */
-
   width: 80%;
   margin: 0 auto;
   border: 5px solid #000;
