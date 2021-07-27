@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Let's find out!</title>
+    <title>Guessing Game</title>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -34,15 +34,17 @@
     <script defer src="script/scriptGuess.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
+    <div class="container bg-info">
+      <div class="row justify-content-center flex-column text-center">
         <h1>Guessing Game!</h1>
         <p class="between">Hint: From 1 to 20</p>
-        <button class="btn btn-lg again">Again!</button>
       </div>
+      <button class="btn btn-outline-danger position-absolute again">
+        Again!
+      </button>
       <div class="number">?</div>
     </div>
-    <div class="container">
+    <div class="container flex-column bg-warning">
       <div class="row left">
         <input type="number" name="" id="" class="guess" />
         <button class="btn btn-lg check"></button>

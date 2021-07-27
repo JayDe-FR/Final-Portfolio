@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -6,28 +6,13 @@
   box-sizing: inherit;
 }
 
-*:focus {
-  outline: none;
-}
-
 html {
-  font-size: 80%;
-  font-family: "Permanent Marker", sans-serif !important;
-  box-sizing: border-box;
-  background: lightcyan;
-}
-
-body {
-  color: royalblue;
-  background-color: lightblue;
-  width: 80%;
-  margin: 0 auto;
-  border: 5px solid #000;
+  font-family: "Poppins", sans-serif !important;
 }
 
 /* LAYOUT */
 
-header {
+/* header {
   position: relative;
   height: 34vh;
 }
@@ -50,11 +35,11 @@ main {
 .right {
   width: 52rem;
   font-size: 2rem;
-}
+} */
 
 /* ELEMENTS STYLE */
 
-h1 {
+/* h1 {
   font-size: calc(4rem * 1.6);
   text-align: center;
   text-shadow: 1px 1px 20px #fff;
@@ -63,10 +48,9 @@ h1 {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
-.number {
-  /* background: #000; */
+/* .number {
   background: royalblue;
   color: snow;
   font-size: 6rem;
@@ -83,7 +67,6 @@ h1 {
 
 .number:hover {
   background: #fff;
-  /* color: #000; */
   color: lightblue;
   transition: all 0.3s;
 }
@@ -117,8 +100,6 @@ h1 {
 
 .btn {
   border: none;
-  /* background: #000; */
-  /* background: linear-gradient(to top right, #00b09b, #96c93d); */
   background: royalblue;
   color: #fff;
   font-size: 2rem;
@@ -129,9 +110,7 @@ h1 {
 }
 
 .btn:hover {
-  /* background: linear-gradient(to left, #fc5c7d, #6a82fb); */
   background-color: #fff;
-  /* color: #222; */
   color: lightblue;
   transition: all 0.3s;
 }
@@ -147,4 +126,4 @@ h1 {
 .label-highscore {
   text-align: center;
   margin-bottom: 2rem;
-}
+} */
