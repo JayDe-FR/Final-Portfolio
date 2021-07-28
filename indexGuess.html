@@ -34,10 +34,9 @@
     <script defer src="script/scriptGuess.js"></script>
   </head>
   <body>
-    <div class="container-fluid bg-info p-5">
-      <button class="btn btn-light p-auto again">Again</button>
+    <div class="container-fluid bg-info p-5" id="one">
       <div class="row justify-content-center flex-column text-center">
-        <h1>Guessing Game!</h1>
+        <h1 class="pb-5">Guessing Game!</h1>
         <p class="between">Hint: From 1 to 20</p>
       </div>
       <div
@@ -55,37 +54,19 @@
         ?
       </div>
     </div>
-    <div class="container-fluid flex-column bg-warning">
-      <div class="row left">
-        <input type="number" name="" id="" class="guess" />
-        <button class="btn btn-lg check">Check</button>
+    <div class="container-fluid flex-column bg-warning" id="two">
+      <div class="row flex-column align-items-center pb-5 left">
+        <input type="number" class="text-center bg-light border-0 guess" />
+        <button class="btn btn-light p-auto mt-4 check">Check</button>
       </div>
-      <div class="row right"></div>
-      <p class="message">Start guessing...</p>
-      <p class="label-score">💯 Score: <span class="score">20</span></p>
-      <p class="label-highscore">
-        🥇 Highscore: <span class="highscore">0</span>
-      </p>
+      <div class="row flex-column align-items-center pb-4 right">
+        <p class="p-1 message">Start guessing...</p>
+        <p class="p-1 label-score">💯 Score: <span class="score">20</span></p>
+        <p class="p-1 label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+        <button class="btn btn-light p-auto again">Again</button>
+      </div>
     </div>
   </body>
 </html>
-
-<!-- <header>
-      <h1>Guessing Game!</h1>
-      <p class="between">Hint: Between 1 and 20</p>
-      <button class="btn again">Again!</button>
-      <div class="number">?</div>
-    </header> -->
-<!-- <main>
-      <section class="left">
-        <input type="number" min="0" max="20" class="guess" />
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
-        <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
-      </section>
-    </main> -->
