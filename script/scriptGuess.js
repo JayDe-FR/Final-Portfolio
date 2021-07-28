@@ -13,8 +13,8 @@ const resetGame = function () {
   sNumber.textContent = "?";
   document.querySelector(".guess").value = "";
   sNumber.style.width = "15rem";
-  document.querySelector("body").style.color = "royalblue";
-  document.querySelector("body").style.backgroundColor = "lightblue";
+  document.querySelector("body").style.color = "#333";
+  document.querySelector("body").style.backgroundColor = "#ffc107";
 };
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
@@ -36,7 +36,7 @@ btnCheck.addEventListener("click", function () {
     // Winner
   } else if (guess === secretNumber) {
     displayMessage("🎉 Correct Number !");
-    document.querySelector("body").style.backgroundColor = "#78e08f";
+    document.querySelector("body").style.backgroundColor = "#28a745";
     sNumber.textContent = secretNumber;
 
     if (score > highscore) {
@@ -51,7 +51,7 @@ btnCheck.addEventListener("click", function () {
       score--;
       scr.textContent = score;
     } else {
-      displayMessage("💥 ...Looser... 💥");
+      displayMessage("💥 ...You LOOSE... 💥");
       scr.textContent = 0;
     }
   }
