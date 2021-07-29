@@ -1,17 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Roboto Mono", sans-serif;
   font-size: 16px;
-  color: #333;
+}
+
+#header {
+  height: 15vh;
+  font-size: 130%;
 }
 
 img {
@@ -43,7 +39,6 @@ header {
   padding: 0.25em 0.75em;
   border: none;
   border-radius: 0.25em;
-  background: #fff;
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
