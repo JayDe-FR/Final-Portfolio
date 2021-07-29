@@ -13,38 +13,9 @@ body {
 
 #card {
   max-width: 950px;
+  max-height: 750px;
 }
 
 .numId {
-  margin: 0.75em;
   padding: 0.05em 2.5em;
-  background: #333;
-}
-
-footer {
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.link,
-.author {
-  font-size: 110%;
-  font-weight: 700;
-}
-
-.link {
-  color: red;
-}
-
-.link:visited {
-  color: red;
-}
-.author {
-  color: darkviolet;
-}
-
-.author:visited {
-  color: darkviolet;
 }

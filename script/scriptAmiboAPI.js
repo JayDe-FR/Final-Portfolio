@@ -4,10 +4,16 @@ const btn = document.querySelector(".random");
 const card = document.getElementById("card");
 
 const renderAmiibo = function (amiibo) {
-  const html = ` <h2 class="name">${amiibo.name}</h2>
-  <span class="gameSeries">${amiibo.gameSeries} --- ${amiibo.type}</span>
-          <img src="${amiibo.image}" alt="${amiibo.name}" />
-          <p class="numId">${amiibo.head + amiibo.tail}</p>`;
+  const html = `<h2 class="text-capitalize text-white font-weight-bold p-3">${
+    amiibo.name
+  }</h2>
+  <img class="w-auto img-fluid w-100 mw-100" src="${amiibo.image}" alt="${
+    amiibo.name
+  }" />
+  <span class="text-capitalize text-white font-weight-bold p-3">${
+    amiibo.gameSeries
+  } --- ${amiibo.type}</span>
+  <p class="text-white bg-dark m-2 numId">${amiibo.head + amiibo.tail}</p>`;
   card.insertAdjacentHTML("beforeend", html);
 };
 
