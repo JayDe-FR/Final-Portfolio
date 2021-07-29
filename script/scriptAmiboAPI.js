@@ -4,10 +4,9 @@ const btn = document.querySelector(".random");
 const card = document.getElementById("card");
 
 const renderAmiibo = function (amiibo) {
-  const html = `<img src="${amiibo.image}" alt="${amiibo.name}" />
-          <h2 class="name">${amiibo.name}</h2>
-          <span class="gameSeries">${amiibo.gameSeries}</span>
-          <span class="type">${amiibo.type}</span>
+  const html = ` <h2 class="name">${amiibo.name}</h2>
+  <span class="gameSeries">${amiibo.gameSeries} --- ${amiibo.type}</span>
+          <img src="${amiibo.image}" alt="${amiibo.name}" />
           <p class="numId">${amiibo.head + amiibo.tail}</p>`;
   card.insertAdjacentHTML("beforeend", html);
 };
@@ -20,7 +19,7 @@ const getAmiibo = async function () {
     renderAmiibo(amiibo.amiibo[`${randomAmiibo}`]);
   } catch (error) {
     throw new Error(
-      `We're sorry, this Amiibo is unavailable for now. (${error.message})`
+      `We're sorry, this Amiibo's data is unavailable for now. (${error.message})`
     );
   }
 };
