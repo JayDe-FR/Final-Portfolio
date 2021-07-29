@@ -4,22 +4,22 @@ const btn = document.querySelector(".btn");
 const display = document.getElementById("content");
 
 const renderQuote = function (result) {
-  const html = `<h2 class="anime_title">${result.anime}</h2>
-        <blockquote class="anime_quote">${result.quote}</blockquote>
-        <p class="anime_chara">${result.character}</p>`;
+  const html = `<h2 class="font-weight-bold text-warning text-uppercase m-auto">${result.anime}</h2>
+        <blockquote
+          class="
+            d-flex
+            justify-content-center
+            align-items-center
+            flex-column flex-wrap
+            text-white
+            font-italic
+            font-weight-lighter
+            anime_quote
+          "
+        >${result.quote}</blockquote>
+        <p class="font-weight-bold text-primary font-italic anime_chara">${result.character}</p>`;
   display.insertAdjacentHTML("beforeend", html);
 };
-
-// const getAnimeQuote = function () {
-//   fetch("https://animechan.vercel.app/api/random")
-//     .then((response) => response.json())
-//     .then((quote) => renderQuote(quote))
-//     .catch((error) => {
-//       new Error(
-//         `We're sorry, this quote is unavailable for now. (${error.message})`
-//       );
-//     });
-// };
 
 const getAnimeQuote = async function () {
   try {
