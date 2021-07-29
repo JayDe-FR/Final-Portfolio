@@ -6,14 +6,12 @@ body {
 }
 
 #header {
-  height: 15vh;
   min-height: 110px;
   font-size: 130%;
 }
 
 #card {
   max-width: 950px;
-  max-height: 750px;
 }
 
 .numId {
