@@ -1,4 +1,5 @@
 "use strict";
+const body = document.querySelector("body");
 const msg = document.querySelector(".message");
 const hScore = document.querySelector(".highscore");
 const scr = document.querySelector(".score");
@@ -36,7 +37,7 @@ btnCheck.addEventListener("click", function () {
     // Winner
   } else if (guess === secretNumber) {
     displayMessage("🎉 Correct Number !");
-    document.querySelector("body").style.backgroundColor = "#28a745";
+    body.style.backgroundColor = "#28a745";
     sNumber.textContent = secretNumber;
 
     if (score > highscore) {
