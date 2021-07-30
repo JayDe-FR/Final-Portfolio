@@ -1,24 +1,24 @@
 "use strict";
 
-const numBtn = document.querySelectorAll("[data-number]");
-const opeBtn = document.querySelectorAll("[data-operator]");
-const clearBtn = document.querySelectorAll("[data-clear]");
-const delBtn = document.querySelectorAll("[data-delete]");
+const numberBtn = document.querySelectorAll("[data-number]");
+const operationBtn = document.querySelectorAll("[data-operator]");
 const equalBtn = document.querySelector("[data-equal]");
+const clearBtn = document.querySelector("[data-clear]");
+const deleteBtn = document.querySelector("[data-delete]");
 const displayUpTextEl = document.querySelector("[data-up]");
 const displayDownTextEl = document.querySelector("[data-down]");
 
 class Calculator {
-  constructor(displayDownTextEl, displayUpTextEl) {
-    this.displayDownTextEl = displayDownTextEl;
+  constructor(displayUpTextEl, displayDownTextEl) {
     this.displayUpTextEl = displayUpTextEl;
+    this.displayDownTextEl = displayDownTextEl;
     this.clear();
   }
 
   clear() {
     this.displayUp = "";
     this.displayLow = "";
-    this.operation = "";
+    this.operation = undefined;
   }
 
   delete() {}
@@ -45,16 +45,16 @@ class Calculator {
     if (isNaN(before) || isNaN(after)) return;
     switch (this.operation) {
       case "+":
-        calculus = before + this.displayLow;
+        calculus = before + after;
         break;
       case "-":
-        calculus = before - this.displayLow;
+        calculus = before - after;
         break;
-      case "*":
-        calculus = before * this.displayLow;
+      case "×":
+        calculus = before * after;
         break;
-      case "/":
-        calculus = before / this.displayLow;
+      case "÷":
+        calculus = before / after;
         break;
       default:
         return;
@@ -65,21 +65,21 @@ class Calculator {
   }
 
   updateDisplay() {
-    this.displayDownTextEl.innerText = this.displayLow;
-    this.displayUpTextEl.innerText = this.displayUp;
+    this.displayDownTextEl.innerText = this.displayUp;
+    this.displayUpTextEl.innerText = this.displayLow;
   }
 }
 
 const calculator = new Calculator(displayDownTextEl, displayUpTextEl);
 
-numBtn.forEach((button) => {
+numberBtn.forEach((button) => {
   button.addEventListener("click", () => {
     calculator.appendNum(button.innerText);
     calculator.updateDisplay();
   });
 });
 
-opeBtn.forEach((button) => {
+operationBtn.forEach((button) => {
   button.addEventListener("click", () => {
     calculator.chooseOperation(button.innerText);
     calculator.updateDisplay();
