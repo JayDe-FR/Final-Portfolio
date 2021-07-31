@@ -58,9 +58,21 @@ class Calculator {
     this.previousOperand = "";
   }
 
+  getDisplayNumber(number) {
+    return number;
+  }
+
   updateDisplay() {
-    this.currentOperandTextEl.innerText = this.currentOperand;
-    this.previousOperandTextEl.innerText = this.previousOperand;
+    this.currentOperandTextEl.innerText = this.getDisplayNumber(
+      this.currentOperand
+    );
+    if (this.operation != null) {
+      this.previousOperandTextEl.innerText = `${this.getDisplayNumber(
+        this.previousOperand
+      )} ${this.operation}`;
+    } else {
+      this.previousOperandTextEl.innerText = "";
+    }
   }
 }
 
