@@ -11,7 +11,9 @@ class Calculator {
     this.operation = undefined;
   }
 
-  delete() {}
+  delete() {
+    this.currentOperand = this.currentOperand.toString().slice(0, -1);
+  }
 
   appendNumber(number) {
     if (number === "." && this.currentOperand.includes(".")) return;
@@ -41,7 +43,7 @@ class Calculator {
       case "-":
         computation = prev - current;
         break;
-      case "*":
+      case "×":
         computation = prev * current;
         break;
       case "÷":
@@ -51,6 +53,9 @@ class Calculator {
         return;
         break;
     }
+    this.currentOperand = computation;
+    this.operation = undefined;
+    this.previousOperand = "";
   }
 
   updateDisplay() {
@@ -83,7 +88,17 @@ operationButtons.forEach((button) => {
   });
 });
 
-equalButton.addEventListener("click", (button) => {
+equalButton.addEventListener("click", () => {
   calculator.compute();
+  calculator.updateDisplay();
+});
+
+clearButton.addEventListener("click", () => {
+  calculator.clear();
+  calculator.updateDisplay();
+});
+
+deleteButton.addEventListener("click", () => {
+  calculator.delete();
   calculator.updateDisplay();
 });
