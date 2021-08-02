@@ -34,29 +34,40 @@
     <link rel="stylesheet" type="text/css" href="style/styleGuess.css" />
   </head>
   <body>
-    <div class="container-fluid pt-5" id="one">
-      <div class="row justify-content-center flex-column text-center">
-        <h1 class="pb-5">Guessing Game!</h1>
-        <p class="between">Hint: From 1 to 20</p>
-        <p class="number text-center w-auto mt-4">?</p>
+    <div class="container-fluid pt-5">
+      <div
+        class="row justify-content-center flex-column text-center text-white"
+      >
+        <h1 class="pb-5 text-white">Guessing Game!</h1>
+        <p class="between font-italic text-white">Hint: From 1 to 20</p>
+        <p class="number text-center w-auto mt-4 text-warning">?</p>
       </div>
-    </div>
-    <div class="container-fluid flex-column" id="two">
-      <div class="row flex-column align-items-center pb-5 left">
-        <input type="number" class="text-center bg- border-0 guess" />
-        <button class="btn btn-dark btn-outline-light p-auto mt-4 check">
-          Check
-        </button>
-      </div>
-      <div class="row flex-column align-items-center pb-4 right">
-        <p class="p-1 message">Start guessing...</p>
-        <p class="p-1 label-score">💯 Score: <span class="score">20</span></p>
-        <p class="p-1 label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
-        <button class="btn btn-primary btn-outline-light mt-5 p-auto again">
-          Again
-        </button>
+        <div class="row flex-column align-items-center pb-5 left">
+          <input type="number" class="text-center bg- border-0 guess" />
+          <button
+            class="
+              btn btn-success btn-outline-dark
+              p-auto
+              mt-4
+              check
+              text-white
+            "
+          >
+            Check
+          </button>
+        </div>
+        <div class="row flex-column align-items-center pb-4 right">
+          <p class="p-1 message text-white">Start guessing...</p>
+          <p class="p-1 label-score text-white">
+            💯 Score: <span class="score text-white">20</span>
+          </p>
+          <p class="p-1 label-highscore text-white">
+            🥇 Highscore: <span class="highscore text-white">0</span>
+          </p>
+          <button class="btn btn-light btn-outline-dark mt-5 p-auto again">
+            Again
+          </button>
+        </div>
       </div>
     </div>
   </body>
