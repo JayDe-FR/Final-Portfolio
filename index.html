@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="container-fluid bg-light sticky-top" id="menu">
       <div class="row justify-content-center" id="navigation">
         <nav class="navbar navbar-expand-sm navbar-light m-2" id="navbar">
@@ -66,20 +66,20 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="my-navbar">
-            <div class="navbar-nav align-items-baseline  font-weight-bold display-5 text-uppercase nav-titles">
-              <a class="nav-item nav-link mr-3 active" href="#header"
+            <ul class="navbar-nav align-items-baseline  font-weight-bold display-5 text-uppercase nav-titles">
+              <a class="nav-item navbar nav-link mr-3 active" href="#header"
                 ><i class="fas fa-code text-warning mr-2"></i> Home</a
               >
-              <a class="nav-item nav-link mr-3" href="#skills"
+              <a class="nav-item navbar nav-link mr-3" href="#skills"
                 ><i class="fas fa-graduation-cap text-warning mr-2"></i> CV</a
               >
-              <a class="nav-item nav-link mr-3" href="#project-container"
+              <a class="nav-item navbar nav-link mr-3" href="#project-container"
                 ><i class="fas fa-folder-open text-warning mr-2"></i> Portfolio</a
               >
-              <a class="nav-item nav-link mr-3" href="#card-contact"
+              <a class="nav-item navbar nav-link mr-3" href="#card-contact"
                 ><i class="fas fa-address-card text-warning mr-2"></i> Contact</a
               >
-            </div>
+            </ul>
           </div>
         </nav>
       </div>

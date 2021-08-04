@@ -1,5 +1,20 @@
 "use strict";
 
+// $(function () {
+//   $(".navbar a, footer a").on("click", function (event) {
+//     event.preventDefault();
+//     const hash = this.hash;
+
+//     $("body, html").animate(
+//       { scrollTop: $(hash).offset().top },
+//       850,
+//       function () {
+//         window.location.hash = hash;
+//       }
+//     );
+//   });
+// });
+
 const cardBox = document.querySelectorAll(".card-body");
 const triggerAppear = window.innerHeight * 0.9;
 
