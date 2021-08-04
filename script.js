@@ -1,20 +1,5 @@
 "use strict";
 
-// $(function () {
-//   $(".navbar a, footer a").on("click", function (event) {
-//     event.preventDefault();
-//     const hash = this.hash;
-
-//     $("body, html").animate(
-//       { scrollTop: $(hash).offset().top },
-//       850,
-//       function () {
-//         window.location.hash = hash;
-//       }
-//     );
-//   });
-// });
-
 const cardBox = document.querySelectorAll(".card-body");
 const triggerAppear = window.innerHeight * 0.9;
 
@@ -31,3 +16,37 @@ function boxAppear() {
   });
 }
 boxAppear();
+
+// document.querySelector(function () {
+//   document
+//     .querySelector(".navbar a, footer a")
+//     .addEventListener("click", function (event) {
+//       event.preventDefault();
+//       const hash = this.hash;
+
+//       document
+//         .querySelector("body, html")
+//         .animate(
+//           { scrollTop: document.querySelector(hash).offset().top },
+//           850,
+//           function () {
+//             window.location.hash = hash;
+//           }
+//         );
+//     });
+// });
+
+// $(function () {
+//   $(".navbar a, footer a").on("click", function (event) {
+//     event.preventDefault();
+//     const hash = this.hash;
+
+//     $("body, html").animate(
+//       { scrollTop: $(hash).offset().top },
+//       850,
+//       function () {
+//         window.location.hash = hash;
+//       }
+//     );
+//   });
+// });
