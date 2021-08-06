@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/79a9888c48.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="container-fluid bg-light sticky-top" id="menu">
+      <div class="row justify-content-center" id="navigation">
+        <nav class="navbar navbar-expand-sm navbar-light m-2" id="navbar">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#my-navbar"
+            aria-controls="my-navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="my-navbar">
+            <ul class="navbar-nav align-items-baseline  font-weight-bold display-5 text-uppercase nav-titles">
+              <a class="nav-item navbar nav-link mr-3 active" href="#header"
+                ><i class="fas fa-code text-warning mr-2"></i> Home</a
+              >
+              <a class="nav-item navbar nav-link mr-3" href="#skills"
+                ><i class="fas fa-graduation-cap text-warning mr-2"></i> CV</a
+              >
+              <a class="nav-item navbar nav-link mr-3" href="#project-container"
+                ><i class="fas fa-folder-open text-warning mr-2"></i> Portfolio</a
+              >
+              <a class="nav-item navbar nav-link mr-3" href="#card-contact"
+                ><i class="fas fa-address-card text-warning mr-2"></i> Contact</a
+              >
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="header">
+      <div
+        class="
+          row
+          flex-nowrap
+          justify-content-around
+          flex-row
+          align-items-center
+        "
+        id="head-page"
+      >
+        <div
+          class="
+            col-lg-6
+            m-3
+            flex-column
+            justify-content-evenly
+            align-items-center
+          "
+          id="flex-head"
+        >
+          <img
+            class="rounded-circle img-thumbnail w-auto h-auto m-1 my-image"
+            src="./images/Moi_04-bg-yellow-squared.png"
+            alt="photo"
+          />
+        </div>
+        <div class="row col-lg-6 flex-column m-auto p-4 bg-transparent">
+          <h4 class="text-white-50 mb-4 font-weight-light">DELION Jayson</h4>
+          <h2 class="text-white text-capitalize font-weight-bold">
+            Frontend Développeur
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="presentation">
+      <div class="row flex-column align-items-center justify-content-center text-center" id="intro">
+        <p class="section-intro text-white text-center p-5 m-auto">
+          Bonjour je m'appelle <span class="text-warning font-weight-bolder">Jayson</span>, futur
+          développeur web.<br />Curieux de tout, je suis actuellement en train
+          d'apprendre le <span class="text-warning font-weight-bolder">Javascript</span> afin de
+          devenir un <span class="text-warning font-weight-bolder">Développeur</span>.
+        </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="
+        container-fluid
+        text-center
+        justify-content-around
+        flex-column
+        align-items-center
+        show
+      "
+      id="skills"
+    >
+      <h4 class="section-title m-auto">Compétences</h4>
+      <div class="row mt-5">
+        <div class="col-md-3 col-sm-6">
+          <div class="card" style="width: 18rem">
+            <div
+              class="
+                row
+                flex-column
+                justify-content-center
+                align-items-center
+                card-body
+                bg-light
+              "
+            >
+              <i class="fab fa-html5 mb-3 text-warning"></i>
+              <p class="card-text">HTML</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div
+              class="
+                row
+                flex-column
+                justify-content-center
+                align-items-center
+                card-body
+                bg-light
+              "
+            >
+              <i class="fab fa-wordpress-simple mb-3 text-warning"></i>
+              <p class="card-text">WordPress</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div
+              class="
+                row
+                flex-column
+                justify-content-center
+                align-items-center
+                card-body
+                bg-light
+              "
+            >
+              <i class="fab fa-figma mb-3 text-warning"></i>
+              <p class="card-text">Figma</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card" style="width: 18rem">
+            <div
+              class="
+                row
+                flex-column
+                justify-content-center
+                align-items-center
+                card-body
+                bg-light
+              "
+            >
+              <i class="fab fa-css3-alt mb-3 text-warning"></i>
+              <p class="card-text">CSS</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div
+              class="
+                row
+                flex-column
+                justify-content-center
+                align-items-center
+                card-body
+                bg-light
+              "
+            >
+              <i class="fab fa-bootstrap mb-3 text-warning"></i>
+              <p class="card-text">Bootstrap</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div
+              class="
+                row
+                flex-column
+                justify-content-center
+                align-items-center
+                card-body
+                bg-light
+              "
+            >
+              <i class="fab fa-sass mb-3 text-warning"></i>
+              <p class="card-text">Sass</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card" style="width: 18rem">
+            <div
+              class="
+                row
+                flex-column
+                justify-content-center
+                align-items-center
+                card-body
+                bg-light
+              "
+            >
+              <i class="fab fa-js-square mb-3 text-warning"></i>
+              <p class="card-text">JavaScript</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div
+              class="
+                row
+                flex-column
+                justify-content-center
+                align-items-center
+                card-body
+                bg-light
+              "
+            >
+              <i class="fab fa-node-js mb-3 text-warning"></i>
+              <p class="card-text">Node.js</p>
+            </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div
+                class="
+                  row
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  card-body
+                  bg-light
+                ">
+                <i class="fab fa-react mb-3 text-warning"></i>
+                <p class="card-text">React</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card" style="width: 18rem">
+            <div
+              class="
+                row
+                flex-column
+                justify-content-center
+                align-items-center
+                card-body
+                bg-light
+              "
+            >
+              <i class="fab fa-git mb-3 text-warning"></i>
+              <p class="card-text">Git</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div
+              class="
+                row
+                flex-column
+                justify-content-center
+                align-items-center
+                card-body
+                bg-light
+              "
+            >
+              <i class="fab fa-npm mb-3 text-warning"></i>
+              <p class="card-text">NPM</p>
+            </div>
+          </div>
+          <div class="card" style="width: 25rem">
+            <div
+              class="
+                row
+                flex-column
+                justify-content-center
+                align-items-center
+                card-body
+                bg-light
+              "
+            >
+              <i class="fas fa-language mb-3 text-warning"></i>
+              <p class="card-text">Anglais</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-3" id="experiences">
+      <div class="col-md-6">
+        <div class="row flex-column justify-content-center align-items-center" id="path">
+          <ul>
+            <h4 class="section-title text-uppercase m-5 p-3">Parcours</h4>
+            <li class="pt-3">
+              <span class="date">2010 - 2011</span>
+              <p class="education m-4">
+                BAC ES [ Sport Etudes ] - Lycée Victor Louis, Talence
+              </p>
+            </li>
+            <li class="pt-5">
+              <span class="date">2012 - 2013</span>
+              <p class="education m-4">
+                DUT Techniques de Commercialisation - IUT Bayonne
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row flex-column justify-content-center align-items-center" id="work">
+          <ul>
+            <h4 class="section-title text-uppercase m-5 p-3">Contributions</h4>
+            <li class="pt-3">
+              <span class="date">2013 - 2014</span>
+              <p class="occupation m-4">
+                Différents postes en restauration et services, saison estivale
+                et hivernale.
+              </p>
+            </li>
+            <li class="pt-5">
+              <span class="date">2014 - 2015</span>
+              <p class="occupation m-4">
+                Membre d'une équipe de distribution alimentaire.
+              </p>
+            </li>
+            <li class="pt-5">
+              <span class="date">2016 - 2017</span>
+              <p class="occupation m-4">
+                Assistant de vente dans la grande distribution.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="last-block p-5" id="today">
+      <h4 class="section-title text-uppercase mt-0 mb-5 p-3">Actuellement</h4>
+      <div class="row" id="on-going">
+        <div class="part-un text-center col-md-6 mb-5 pt-3">
+          <span class="date">Depuis 2018</span>
+          <p class="occupation-now mt-4">
+            Athlétisme : Saut en Longueur <br />
+            [ Athlète de Haut Niveau ]
+          </p>
+        </div>
+        <div class="part-deux text-center col-md-6 pt-3">
+          <span class="date">Depuis 2020</span>
+          <p class="occupation-now mt-4">
+            Formation en ligne : Développement Web Frontend <br />
+            [ Udemy, FreeCodeCamp, Skilleos, Sololearn ]
+          </p>
+          <div class="dropdown dropup">
+            <a
+              class="btn dropdown-toggle text-black-50 m-3"
+              href="#"
+              role="button"
+              id="certifications"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Certifications
+            </a>
+            <div class="dropdown-menu" aria-labelledby="certifications">
+              <ul class="grade-links">
+                <li>
+                  <a
+                    class="ml-3 mr-3"
+                    href="../images/Certif HTML Sololearn.jpg"
+                    target="_blank"
+                    >HTML - Sololearn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="ml-3 mr-3"
+                    href="../images/Certif CSS Sololearn.jpg"
+                    target="_blank"
+                    >CSS3 - Sololearn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="ml-3 mr-3"
+                    href="../images/Udemy Build Responsive Website HTML CSS JS.jpg"
+                    target="_blank"
+                    >Build Responsive Website</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="ml-3 mr-3"
+                    href="../images/Javascript Udemy Certif.jpg"
+                    target="_blank"
+                    >JavaScript</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="ml-3 mr-3"
+                    href="../images/WebDevelopment - John Taieb's Course.jpg"
+                    target="_blank"
+                    >Web Development</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-3" id="project-container">
+      <h4 class="section-title m-3 pt-5">Portfolio</h4>
+      <div class="row justify-content-around p-5">
+        <div class="col-md-6 col-lg-6 project p-3">
+          <div class="project-container">
+            <h5 class="project-title pb-3 text-center">
+              <a class="font-weight-light" href="./projects/NNAnime/index.html" target="_blank"
+                ><i class="fas fa-code icon-dark mr-3"></i> Nihon'Noanime</a
+              >
+            </h5>
+            <p class="project-description text-center p-3">
+              Landing Page d'un service de streaming dédié à l'animation
+              Japonaise.
+            </p>
+            <a href="./projects/NNAnime/index.html" target="_blank">
+              <img
+                src="./images/nihonAnime.png"
+                alt="project-thumbnail"
+                loading="lazy"
+                class="project-thumbnail"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 project p-3">
+          <div class="project-container">
+            <h5 class="project-title pb-3 text-center">
+              <a class="font-weight-light" href="./projects/CozyTime/index.html" target="_blank"
+                ><i class="fas fa-code icon-dark mr-3"></i> Cozy &times; Time</a
+              >
+            </h5>
+            <p class="project-description text-center p-3">
+              Utilisation d'une API pour créer un showcase des dernières sorties
+              cinéma.
+            </p>
+            <a href="./projects/CozyTime/index.html" target="_blank">
+              <img
+                src="./images/cozyTime.png"
+                alt="project-thumbnail"
+                loading="lazy"
+                class="project-thumbnail"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 project p-3">
+          <div class="project-container">
+            <h5 class="project-title pb-3 text-center">
+              <a class="font-weight-light" href="./projects/Snake/index.html" target="_blank"
+                ><i class="fas fa-code icon-dark mr-3"></i> Snake Game</a
+              >
+            </h5>
+            <p class="project-description text-center p-3">
+              Classique des années 2000.<br />Tentez-votre chance !
+            </p>
+            <a href="./projects/Snake/index.html" target="_blank"
+              ><img
+                src="./images/snakeGame.png"
+                alt="project-thumbnail"
+                loading="lazy"
+                class="project-thumbnail"
+            /></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 project p-3">
+          <div class="project-container">
+            <h5 class="project-title pb-3 text-center">
+              <a class="font-weight-light" href="./projects/Omnifood/index.html" target="_blank"
+                ><i class="fas fa-code icon-dark mr-3"></i> Omnifood</a
+              >
+            </h5>
+            <p class="project-description text-center p-3">
+              Landing Page d'un restaurant aux services haut de gamme disponible
+              chez soi.
+            </p>
+            <a href="./projects/Omnifood/index.html" target="_blank"
+              ><img
+                src="./images/omnifoodRestaurant.png"
+                alt="project-thumbnail"
+                loading="lazy"
+                class="project-thumbnail"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="card-contact">
+      <div class="row card">
+        <div class="card-body p-5">
+          <div class="card-header justify-content-around align-items-center bg-transparent">
+            <div class="card-left-infos">
+              <h3 class="card-title mb-5 text-white-50">DELION Jayson</h3>
+              <h5 class="card-subtitle mb-5 font-weight-bold">Frontend Développeur</h5>
+            </div>
+            <div class="card-right-image">
+              <img
+                class="rounded-circle img-thumbnail my-image"
+                src="./images/Moi_04-bg-yellow-squared.png"
+                alt="photo"
+              />
+            </div>
+          </div>
+          <div class="card-footer bg-warning">
+            <a class="font-weight-bold" href="mailto:jaysoncode@webdev.io">jaysoncode@webdev.io</a>
+            <a class="font-weight-bold" href="tel:+33646267527"
+              ><i class="fas fa-phone-square-alt"></i
+            ></a>
+            <a
+              href="https://twitter.com/jayson_delion"
+              target="_blank"
+              class="card-link m-0"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://github.com/JayDe-FR"
+              target="_blank"
+              class="card-link m-0"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/jay-delion-85550b203/"
+              target="_blank"
+              class="card-link m-0"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-5" id="footer">
+      <div class="flex-row">
+        <p class="text-center text-white m-0">
+          Fait mains avec <i class="fas fa-hat-wizard"></i> et
+          <i class="fas fa-heartbeat"></i><br />
+          &#169; Copyright 2021 &mdash; DELION Jayson
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

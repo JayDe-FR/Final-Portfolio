@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NNAnime</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div
+      class="
+        container-fluid
+        flex-row flex-column
+        justify-content-center
+        align-items-center
+        p-auto
+      "
+      id="head-page"
+    >
+      <div class="row text-center flex-column justify-content-center p-5">
+        <h1 class="text-white">
+          Nihon&nbsp;'&nbsp;Noanime
+          <img class="logo ml-3" src="./images/hanami.png" alt="logo" />
+        </h1>
+        <p class="text-white m-auto">
+          Your anime accessible anytime, anywhere.
+        </p>
+        <button type="button" class="btn btn-lg text-white">More Infos</button>
+      </div>
+    </div>
+
+    <div class="container p-3" id="section-perks">
+      <div class="row reveal" id="section-tools">
+        <div class="col-md-6">
+          <article class="tool-container p-2">
+            <h3 class="row text-black tool-title justify-content-center">
+              Download <i class="fas fa-cloud-download-alt icon"></i>
+            </h3>
+
+            <p class="tool-description p-1 text-black-50">
+              Available even in "offline" mode, thanks to the download available
+              on our whole library titles.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="tool-container p-2">
+            <h3 class="row text-black tool-title justify-content-center">
+              Chromecast <i class="fab fa-chromecast icon"></i>
+            </h3>
+
+            <p class="tool-description p-1 text-black-50">
+              Enjoy your animations on multiple screens simultaneously. We
+              accompany you wherever, whenever.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="row reveal" id="section-services">
+        <div class="col-md-6">
+          <article class="tool-container p-2">
+            <h3 class="row text-black tool-title justify-content-center">
+              Bookmarks <i class="far fa-bookmark icon"></i>
+            </h3>
+
+            <p class="tool-description p-1 text-black-50">
+              For more simplicity, we offer you the possibility of creating
+              lists according to different criteria.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="tool-container p-2">
+            <h3 class="row text-black tool-title justify-content-center">
+              Library <i class="fas fa-list icon"></i>
+            </h3>
+
+            <p class="tool-description p-1 text-black-50">
+              Enjoy our catalog, including most of the great classics but also
+              the latest novelties. Discover new products or share them.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="row reveal" id="section-benefits">
+        <div class="col-md-12">
+          <article class="tool-container p-2">
+            <h3 class="row text-black tool-title justify-content-center">
+              Personify <i class="far fa-edit icon"></i>
+            </h3>
+
+            <p class="tool-description p-1 text-black-50">
+              Take advantage of the "bookmark" function to create your own
+              personalized lists. Create as many as you want, easily accessible.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-dark" id="section-subscribe">
+      <h1 class="text-white text-uppercase text-center m-5">
+        Start now
+        <img class="logo ml-3" src="./images/hanami.png" alt="logo" />
+      </h1>
+      <p class="text-white text-center">
+        Create an account and start watching animes!
+      </p>
+      <div class="form w-50 m-auto">
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control text-center"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <button
+          class="
+            btn btn-block btn-lg
+            text-white
+            font-weight-bold
+            text-uppercase
+            mb-5
+          "
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="section-footer">
+      <div class="row bg-warning align-items-center">
+        <div
+          class="
+            col-lg-6
+            text-center text-uppercase
+            flex-column
+            justify-content-center
+            p-5
+          "
+        >
+          <h1 class="text-black">
+            Nihon&nbsp;'&nbsp;Noanime
+            <img class="logo ml-3" src="./images/hanami.png" alt="logo" />
+          </h1>
+          <p class="text-blacktext-center">
+            Your anime accessible anytime, anywhere.
+          </p>
+        </div>
+        <div
+          class="col-lg-6 text-center flex-column justify-content-center p-auto"
+        >
+          <div class="list-group w-50 m-auto">
+            <a
+              href="#head-page"
+              class="list-group-item list-group-item-action text-white"
+              >Home
+            </a>
+            <a
+              href="#section-tools"
+              class="list-group-item list-group-item-action text-white"
+              >Services</a
+            >
+            <a
+              href="#section-subscribe"
+              class="list-group-item list-group-item-action text-white"
+              >Subscribe
+            </a>
+          </div>
+        </div>
+        <p class="text-black text-center m-auto">
+          Handmade with <i class="fas fa-hat-wizard icon"></i> &
+          <i class="fas fa-coffee icon"></i> by
+          <a href="https://twitter.com/jayson_delion" target="_blank">Jay</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
