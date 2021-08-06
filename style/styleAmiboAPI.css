@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 17px;
+}
+
+#header {
+  min-height: 110px;
+  font-size: 130%;
+}
+
+#card {
+  max-width: 950px;
+}
+
+.numId {
+  padding: 0.05em 2.5em;
+}

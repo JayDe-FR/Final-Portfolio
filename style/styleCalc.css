@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  font-family: "Raleway", serif;
+  font-size: 16px;
+  color: #222;
+}
+
+#container {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.75fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "display display display display"
+    "clear clear delete multi"
+    "seven eight nine divide"
+    "four five six minus"
+    "one two three plus"
+    "zero dot equal equal";
+  gap: 0.2em;
+  margin: 9em auto;
+}
+
+#display {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 150%;
+  font-weight: 700;
+  padding: 0.75em 0.25em;
+  border-radius: 0.25em;
+  grid-area: display;
+}
+
+.up,
+.down {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.up {
+  font-size: 90%;
+  color: rgb(255, 255, 255);
+}
+
+.down {
+  font-size: 150%;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.delete {
+  grid-area: delete;
+}
+
+.multi {
+  grid-area: multi;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.equal {
+  grid-area: equal;
+}
+
+.dot {
+  grid-area: dot;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.num,
+.key,
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  transform: scale(1);
+  transition: background ease-in-out 200ms, transform ease-in-out 50ms;
+}
+
+.num:active,
+.key:active,
+.sign:active {
+  transform: scale(0.95);
+}
+
+.num {
+  font-size: 120%;
+  font-weight: 700;
+  background: lightsteelblue;
+}
+
+.num:hover {
+  background: rgba(192, 213, 241, 0.8);
+}
+
+.key {
+  font-size: 200%;
+  font-weight: 700;
+  background: lightseagreen;
+}
+
+.key:hover {
+  background: rgb(41, 223, 214);
+}
+
+.sign {
+  font-size: 250%;
+  font-weight: 400;
+  background: lightgreen;
+}
+
+.sign:hover {
+  background: rgba(57, 199, 57, 0.8);
+}

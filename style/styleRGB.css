@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap");
+
+html {
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
+body {
+  background: #222;
+  color: #f3f3f3;
+  margin: 0 auto;
+}
+
+#display {
+  height: 50vh;
+  display: flex;
+}
