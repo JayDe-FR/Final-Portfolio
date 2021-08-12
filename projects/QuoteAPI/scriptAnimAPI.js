@@ -3,6 +3,12 @@
 const btn = document.querySelector(".btn");
 const display = document.getElementById("content");
 
+const renderSpinner = function() {
+  const html = `<div class="spinner-border text-warning"></div>`;
+  setTimeout(function() {renderSpinner, 1000});
+  card.insertAdjacentHTML('beforeend', html);
+};
+
 const renderQuote = function (result) {
   const html = `<h2 class="font-weight-bold text-warning text-uppercase m-auto">${result.anime}</h2>
         <blockquote
@@ -25,7 +31,6 @@ const getAnimeQuote = async function () {
   try {
     const data = await fetch("https://animechan.vercel.app/api/random");
     const result = await data.json();
-    console.log(result);
     renderQuote(result);
   } catch (error) {
     console.error(
