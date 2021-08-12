@@ -276,11 +276,20 @@ img.project-thumbnail:hover {
 
 @media (max-width: 600px) {
   #card-contact h5 {
-    font-size: 250%;
+    font-size: 200%;
   }
-  #card-contact img {
+
+  #card-contact h3 {
+    font-size: 120%;
+  }
+
+  #card-contact a {
+    font-size: 80%;
+  }
+
+  /* #card-contact img {
     display: none;
-  }
+  } */
 }
 
 .row.card {
