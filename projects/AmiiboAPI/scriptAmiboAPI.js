@@ -17,6 +17,12 @@ const renderAmiibo = function (amiibo) {
   card.insertAdjacentHTML("beforeend", html);
 };
 
+const renderSpinner = function() {
+  const html = `<div class="spinner-border text-warning"></div>`;
+  setTimeout(function() {renderSpinner, 1000});
+  card.insertAdjacentHTML('beforeend', html);
+}
+
 const getAmiibo = async function () {
   try {
     const data = await fetch("https://www.amiiboapi.com/api/amiibo/");
