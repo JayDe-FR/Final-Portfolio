@@ -4,9 +4,12 @@ const btn = document.querySelector(".btn");
 const display = document.getElementById("content");
 
 const renderSpinner = function() {
-  const html = `<div class="spinner-border text-warning"></div>`;
-  setTimeout(function() {renderSpinner, 1000});
-  card.insertAdjacentHTML('beforeend', html);
+  const html = `<div class="d-flex justify-content-center">
+                  <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>`;
+  display.insertAdjacentHTML('beforeend', html);
 };
 
 const renderQuote = function (result) {
@@ -29,6 +32,7 @@ const renderQuote = function (result) {
 
 const getAnimeQuote = async function () {
   try {
+    renderSpinner();
     const data = await fetch("https://animechan.vercel.app/api/random");
     const result = await data.json();
     renderQuote(result);
