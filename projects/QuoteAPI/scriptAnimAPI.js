@@ -35,7 +35,12 @@ const getAnimeQuote = async function () {
     renderSpinner();
     const data = await fetch("https://animechan.vercel.app/api/random");
     const result = await data.json();
-    renderQuote(result);
+    if (!result) {
+      renderSpinner();
+    } else {
+      display.innerText = "";
+      renderQuote(result);
+    }
   } catch (error) {
     console.error(
       `We're sorry, this quote is unavailable for now. (${error.message})`
