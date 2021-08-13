@@ -58,6 +58,14 @@ body {
 
 /* MENU SECTION */
 
+#menu {
+  transition: all ease-in-out 250ms;
+}
+
+#menu:hover {
+  background: var(--color-bg-sub-title) !important;
+}
+
 #menu span {
   font-size: 120%;
 }
@@ -73,7 +81,7 @@ body {
 }
 
 .nav-titles .nav-link.nav-item:hover {
-  color: var(--color-icon-hover);
+  color: var(--color-bg);
 }
 
 /* PRESENTATION SECTION */
