@@ -1,66 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-family: 1.1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background: linear-gradient(to right, #3494e6, #ec6ead);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
   scroll-behavior: smooth;
   height: 100vh;
-  background-color: #aeecca;
-  padding: 1em;
-}
-
-.container {
-  background-color: rgb(26, 26, 26);
-  border-radius: 0.5em;
-  border: none;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 3.5em 2.25em;
-  text-align: center;
-  max-width: 100%;
-  width: 800px;
-  color: #f5f5f5;
-}
-
-h3 {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  text-decoration: underline;
-}
-
-.joke {
-  font-style: italic;
-  font-size: 1.5em;
-  letter-spacing: 1px;
-  line-height: 2em;
-  margin: 1.5em auto;
-  max-width: 600px;
-}
-
-.btn {
-  background-color: #aeecca;
-  border: none;
-  border-radius: 0.5em;
-  color: #333;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 1.2em 2.5em;
-  font-family: inherit;
-  font-size: 1.1em;
-  font-weight: 700;
-  cursor: pointer;
-  transform: scale(1);
-  transition: transform ease-in-out 50ms;
-}
-
-.btn:active {
-  transform: scale(0.95);
 }
