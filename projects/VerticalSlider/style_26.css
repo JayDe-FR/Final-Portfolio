@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 15px;
+  height: 100vh;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 500ms ease-in-out;
+}
+
+.left-slide > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #666;
+}
+
+.left-slide h1 {
+  font-size: 250%;
+  margin-bottom: 0.5em;
+  margin-top: -1em;
+}
+
+.right-slide {
+  height: 100%;
+  width: 65%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  transition: transform 500ms ease-in-out;
+}
+
+.right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  border: none;
+  border-radius: 0.25em;
+  background-color: #fff;
+  color: #666;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.15em 0.5em;
+  transition: all ease-in-out 200ms;
+}
+
+button:hover {
+  color: #333;
+}
+
+.slider-container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+  transform: translateX(-100%);
+}
+.slider-container .action-buttons .up-button {
+  transform: translateY(-100%);
+}

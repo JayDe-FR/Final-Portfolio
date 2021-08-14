@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+html.dark {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}
+
+html.dark {
+  background: #111;
+  color: var(--primary-color);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  transition: all ease-in 500ms;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  /* font-family: "Heebo", sans-serif; */
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.toggle {
+  font-size: 110%;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.25em 1em;
+  margin: 0.75em 0 0 0;
+  cursor: pointer;
+}
+
+.clock-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 2em;
+  background-color: var(--primary-color);
+}
+
+.needle {
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  width: 3px;
+  border-radius: 5px;
+  transform-origin: bottom center;
+  transition: all ease-in 500ms;
+}
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+  width: 5px;
+}
+
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 90px;
+}
+
+.needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 110px;
+  width: 1px;
+  background-color: red;
+}
+
+.center-point {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-point::after {
+  content: "";
+  background-color: var(--primary-color);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.time {
+  font-size: 350%;
+  margin: 0.5em;
+}
+
+.date {
+  color: red;
+  font-size: 80%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.date .circle {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 17px;
+  transition: all ease-in-out 500ms;
+}
