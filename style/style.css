@@ -259,8 +259,8 @@ h5.project-title {
   font-size: 200%;
 }
 
-.icon-dark {
-  color: var(--color-button);
+#my-carousel .carousel-inner {
+max-width: 1000px;
 }
 
 img.project-thumbnail {
