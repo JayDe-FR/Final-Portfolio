@@ -8,37 +8,37 @@ const dateEl = document.querySelector(".date");
 const toggle = document.querySelector(".toggle");
 
 const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
+  "Lundi",
+  "Mardi",
+  "Mercredi",
+  "Jeudi",
+  "Vendredi",
+  "Samedi",
+  "Dimanche",
 ];
 const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
+  "Janvier",
+  "Fevrier",
+  "Mars",
+  "Avril",
+  "Mai",
+  "Juin",
+  "Juillet",
+  "Aout",
+  "Septembre",
+  "Octobre",
+  "Novembre",
+  "Decembre",
 ];
 
 toggle.addEventListener("click", (e) => {
   const html = document.querySelector("html");
   if (html.classList.contains("dark")) {
     html.classList.remove("dark");
-    e.target.innerHTML = "🌚";
+    e.target.innerHTML = "🌑";
   } else {
     html.classList.add("dark");
-    e.target.innerHTML = "💡";
+    e.target.innerHTML = "🌕";
   }
 });
 
@@ -56,7 +56,7 @@ function setTime() {
   const hoursForClock = hours % 12;
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
-  const ampm = hours > 12 ? "PM" : "AM";
+
 
   hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(
     hoursForClock,
@@ -82,11 +82,9 @@ function setTime() {
     360
   )}deg)`;
 
-  timeEl.innerHTML = `${hours}:${
-    minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds}`;
+  timeEl.innerHTML = `${hours} : ${minutes < 10 ? `0${minutes}` : minutes} : ${seconds < 10 ? `0${seconds}` : seconds}`;
 
-  dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`;
+  dateEl.innerHTML = `${days[day]} <span class="circle">${date}</span> ${months[month]} `;
 }
 
 setTime();
