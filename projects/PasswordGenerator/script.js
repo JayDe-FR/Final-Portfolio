@@ -22,13 +22,12 @@ clipboardEl.addEventListener("click", () => {
 
   if (!password) return;
 
-  // .Clipboard/Paste to console get Password
   textarea.value = password;
   document.body.appendChild(textarea);
   textarea.select();
   document.execCommand("copy");
   textarea.remove();
-  alert("Password Copied 📌\nPaste it Now 👨🏽‍💻");
+  alert("Copied to clipboard 📌\nPaste or save it! 👨🏽‍💻");
 });
 
 generateEl.addEventListener("click", () => {
@@ -37,7 +36,6 @@ generateEl.addEventListener("click", () => {
   const hasUpper = uppercaseEl.checked;
   const hasNumber = numberEl.checked;
   const hasSymbol = symbolsEl.checked;
-  //   console.log(hasLower, hasUpper, hasNumber, hasSymbol);
 
   resultEl.innerText = generatePassword(
     hasLower,
@@ -69,22 +67,18 @@ function generatePassword(lower, upper, number, symbol, length) {
 }
 
 function getRandomLower() {
-  //. Give Random lowerCase letter (a-z) from ASCII table mix to .fromCharCode()
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
 
 function getRandomUpper() {
-  //. Give Random upperCase (A-Z) letter from ASCII table mix to .fromCharCode()
   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
 
 function getRandomNumber() {
-  //. Give Random Number (0-9) from ASCII table mix to .fromCharCode()
   return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 }
 
 function getRandomSymbol() {
   const symbols = "!@#$%^&*(){}[]=<>/,.~§µ£¤|`;:?\"'";
-  //. Give Random Symbol from OUR choice (here)
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
