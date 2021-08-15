@@ -278,6 +278,10 @@ img.project-thumbnail:hover {
 
 /* CONTACT SECTION */
 
+#card-contact{
+  max-width: 800px;
+}
+
 #card-contact .card-body {
   background: var(--color-bg-sub-title);
 }
