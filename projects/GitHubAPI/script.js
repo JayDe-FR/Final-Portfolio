@@ -30,7 +30,7 @@ const getRepos = async function (username) {
 };
 
 const createUsercard = function (user) {
-  const cardMarkup = `<div class="card">
+  const cardMarkup = `<div class="rounded d-flex p-5 m-3 card">
         <div>
           <img
             src="${user.avatar_url}"
@@ -38,15 +38,15 @@ const createUsercard = function (user) {
             class="avatar"
           />
         </div>
-        <div class="user-info">
-          <h2>${user.name}</h2>
+        <div class="text-dark ml-5 user-info">
+          <h2 class="mt-0">${user.name}</h2>
           <p>
             ${user.bio}
           </p>
-          <ul>
-            <li>${user.followers} <strong>Followers</strong></li>
-            <li>${user.following} <strong>Following</strong></li>
-            <li>${user.public_repos} <strong>Repos</strong></li>
+          <ul class="d-flex list-unstyled justify-content-between">
+            <li class="d-flex align-items-center">${user.followers} <strong class="ml-2">Followers</strong></li>
+            <li class="d-flex align-items-center">${user.following} <strong class="ml-2">Following</strong></li>
+            <li class="d-flex align-items-center">${user.public_repos} <strong class="ml-2">Repos</strong></li>
           </ul>
 
           <div id="repos"></div>
