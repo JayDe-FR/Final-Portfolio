@@ -8,6 +8,7 @@ const search = document.getElementById("search");
 const getUser = async function (username) {
   try {
     const { data } = await axios(API_URL + username);
+    console.log(data);
     createUsercard(data);
     getRepos(username);
   } catch (err) {
@@ -57,14 +58,14 @@ const createUsercard = function (user) {
 
 const createErrorCard = function (msg) {
   const cardMarkup = `<div class="card">
-        <h1>${msg}</h1>
-    </div>`;
+                          <h1>${msg}</h1>
+                      </div>`;
   main.innerHTML = cardMarkup;
 };
 
 const addReposCard = function (repos) {
   const reposEl = document.getElementById("repos");
-  repos.slice(0, 10).forEach((repo) => {
+  repos.slice(0, 15).forEach((repo) => {
     const repoEl = document.createElement("a");
     repoEl.classList.add("repo");
     repoEl.href = repo.html_url;
