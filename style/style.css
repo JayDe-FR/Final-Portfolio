@@ -62,10 +62,6 @@ body {
   transition: all ease-in-out 250ms;
 }
 
-#menu:hover {
-  background: var(--color-bg-sub-title) !important;
-}
-
 #menu span {
   font-size: 120%;
 }
@@ -74,15 +70,12 @@ body {
   font-size: 130%;
 }
 
-.nav-titles .nav-link.nav-item,
-.nav-titles .nav-link.nav-item.active {
-  color: var(--color-button);
+.nav-link,
+.nav-link.active {
+  color: var(--color-bg);
   transition: all ease-in-out 250ms;
 }
 
-.nav-titles .nav-link.nav-item:hover {
-  color: var(--color-bg);
-}
 
 /* PRESENTATION SECTION */
 

@@ -50,10 +50,10 @@
     <link rel="stylesheet" href="./style/style.css" />
     <script defer src="./script/script.js"></script>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body>
     <div id="menu" class="container-fluid bg-light sticky-top">
-      <div class="row justify-content-center" id="navigation">
-        <nav class="navbar navbar-expand-sm navbar-light m-2" id="navbar">
+      <div id="navigation" class="row justify-content-center">
+        <nav id="navbar" class="navbar navbar-expand-sm navbar-light m-2">
           <button
             class="navbar-toggler"
             type="button"
@@ -65,20 +65,26 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="my-navbar">
+          <div id="my-navbar" class="collapse navbar-collapse">
             <ul class="navbar-nav align-items-baseline  font-weight-bold display-5 text-uppercase nav-titles">
-              <a class="nav-item navbar nav-link mr-3 active" href="#header"
-                ><i class="fas fa-code text-warning mr-2"></i> Home</a
-              >
-              <a class="nav-item navbar nav-link mr-3" href="#skills"
-                ><i class="fas fa-graduation-cap text-warning mr-2"></i> CV</a
-              >
-              <a class="nav-item navbar nav-link mr-3" href="#project-container"
+              <li class="nav-item mr-3 ">
+                <a class="nav-link text-info active" href="#header">
+                  <i class="fas fa-code text-warning mr-2"></i> Home</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link text-info" href="#skills">
+                  <i class="fas fa-graduation-cap text-warning mr-2"></i> CV</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link text-info" href="#project-container"
                 ><i class="fas fa-folder-open text-warning mr-2"></i> Portfolio</a
               >
-              <a class="nav-item navbar nav-link mr-3" href="#card-contact"
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link text-info" href="#card-contact"
                 ><i class="fas fa-address-card text-warning mr-2"></i> Contact</a
               >
+              </li>
             </ul>
           </div>
         </nav>
@@ -537,7 +543,7 @@
       </div>
     </div>
 
-    <div id="card-contact class="container-fluid"">
+    <div id="card-contact" class="container-fluid">
       <div class="row card">
         <div class="card-body p-5">
           <div class="card-header justify-content-around align-items-center bg-transparent">
