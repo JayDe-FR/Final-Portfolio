@@ -17,6 +17,13 @@ function boxAppear() {
 }
 boxAppear();
 
+const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  targetA: "#header",
+  targetB: "#skills",
+  targetC: "#project-container",
+  targetD: "#card-contact",
+});
+
 // document.querySelector(function () {
 //   document
 //     .querySelector(".navbar a, footer a")
